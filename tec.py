@@ -1,0 +1,1 @@
+print "En esta casa hay muchos dispositivos electrónicos"
