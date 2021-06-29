@@ -1,3 +1,5 @@
+import math
+
 # This function adds two numbers
 def add(x, y):
     return x + y
@@ -26,7 +28,7 @@ loop=True
 while loop:
     print_menu()
     
-    principal = input("Elije tu opción [1 - 3]: ")
+    principal = int(input("Elije tu opción [1 - 3]: "))
 
     if principal == 1:
         print ("Operaciones básicas, has elegido.")
@@ -60,6 +62,7 @@ while loop:
                 break
             else:
                 print("Invalid Input")
+    
     elif principal == 2:
             print ("Operaciones avanzadas, has elegido.")
 
