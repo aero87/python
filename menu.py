@@ -18,9 +18,9 @@ def divide(x, y):
 
 def print_menu():
     print (30 * "-", "MENU", 30 * "-")
-    print ("1.- Realizar operaciones básicas")
-    print ("2.- Realizar operaciones avanzadas")
-    print ("3.- Salir")
+    print ("1.- Basic Operations")
+    print ("2.- Advanced Operations")
+    print ("3.- Exit")
     print (66 * "-")
 
 loop=True
@@ -28,10 +28,10 @@ loop=True
 while loop:
     print_menu()
     
-    principal = int(input("Elije tu opción [1 - 3]: "))
+    principal = int(input("Choose your option [1 - 3]: "))
 
     if principal == 1:
-        print ("Operaciones básicas, has elegido.")
+        print ("Basic operations you have chosen.")
 
         print("Select operation.")
         print("1. Add")
@@ -64,8 +64,11 @@ while loop:
                 print("Invalid Input")
     
     elif principal == 2:
-            print ("Operaciones avanzadas, has elegido.")
+            print ("Advanced operations you have chosen.")
+            number = int(input("Type a number: "))
+            sqrt = math.sqrt(number)
+            print("Square root: " , sqrt)
 
     elif principal == 3:
-        print ("Saliendo")
+        print ("Exiting...")
         loop=False
