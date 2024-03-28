@@ -17,5 +17,3 @@ if largest_num is not None:
     
 else:
     print("The list is empty.")
-    
-# print(f"The largest numer is {largest_num}")
